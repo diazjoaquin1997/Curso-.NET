@@ -1,0 +1,11 @@
+﻿@using Curso_TOM.Models.Users;
+@model UserListViewModel
+
+
+<div class="row">
+    <h1>Listado de Usuarios</h1>
+    @foreach (var item in Model.Users)
+    {
+        <h5>@item</h5>
+    }
+</div>

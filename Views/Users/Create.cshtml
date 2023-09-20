@@ -1,0 +1,13 @@
+﻿@using Curso_TOM.Models.Users;
+
+@model UserModel
+
+@Html.BeginForm("Create", "Users", FormMethod.Post)
+{
+    <div class="form-group">
+        @Html.EditorFor(x => x.Nombre)       
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success" type="submit">Enviar</button>
+    </div>
+}
